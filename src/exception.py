@@ -3,6 +3,7 @@
 
 ############ exception handling ############
 import sys 
+from logger import logging
 
 
 #the sys module in python provides various functions and variables that are used
