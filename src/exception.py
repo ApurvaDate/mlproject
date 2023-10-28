@@ -3,7 +3,7 @@
 
 ############ exception handling ############
 import sys 
-from logger import logging
+from src.logger import logging
 
 
 #the sys module in python provides various functions and variables that are used
@@ -35,12 +35,12 @@ class CustomException(Exception):
         return self.error_message   #to print the error message is called.
     
 
-# import logging
+import logging
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     try:
-#         a = 1/0
-#     except Exception as e:
-#         logging.info("Divide by zero ")
-#         raise CustomException(e, sys)
+    try:
+        a = 1/0
+    except Exception as e:
+        logging.info("Divide by zero ")
+        raise CustomException(e, sys)

@@ -26,5 +26,5 @@ logging.basicConfig(
 )# any print msg will use this config, wrt msg
 
 
-# if __name__ == "__main__":
-#     logging.info("Logging  has started")
+if __name__ == "__main__":
+    logging.info("Logging  has started")
